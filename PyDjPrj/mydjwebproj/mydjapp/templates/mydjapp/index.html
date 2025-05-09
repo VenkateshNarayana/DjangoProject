@@ -1,0 +1,106 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>First DJANGO PROJECT</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1> Welcome to webpage created using django </h1>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browny Star - Portfolio</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background-color: rgba(34, 34, 34, 0.55);
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        background: #ddd;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Browny Star</h1>
+        <p>UI/UX Designer and Web Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Professional UI/UX Designer and Web Developer with expertise in design and frontend technologies.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Adobe Photoshop - 90%</li>
+            <li>Adobe Illustrator - 85%</li>
+            <li>HTML5 - 90%</li>
+            <li>CSS3 - 85%</li>
+            <li>Communication - 97%</li>
+            <li>Creativity - 90%</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2><a href="{% url 'contactform' %}">Click Here to Open Contact Form</a>
+        <p>Phone: 987-123-6547</p>
+        <p>Email: <a href="mailto:browny@info.com">browny@info.com</a></p>
+        <p>Website: <a href="https://www.brownsine.com">www.brownsine.com</a></p>
+    </section>
+    <section id="Admin">
+        <h2>Contact</h2><a href="{% url 'contactform' %}">Click Here to Open Contact Form</a>
+        <p>Phone: 987-123-6547</p>
+        <p>Email: <a href="mailto:browny@info.com">browny@info.com</a></p>
+        <p>Website: <a href="https://www.brownsine.com">www.brownsine.com</a></p>
+    </section>
+
+    <footer>
+        <p>© Copyright Browny Star. Designed and developed by Themesine.</p>
+    </footer>
+</body>
+</html>
